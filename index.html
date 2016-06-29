@@ -211,9 +211,9 @@ var ctx = document.getElementById("transaction_fee");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Stupefix", "Google (1,001 - 1 million transactions / month)", "Google (1,000,001 - 5 million transactions / month)",
-        "Microsoft (Standard)", "Google (5,000,001 - 20 million transactions / month)", "Google (1 - 1,000 transactions / month)",
-        "Microsoft (30,000 transactions / month)"],
+        labels: ["Stupefix", "Google (1,001&ndash;1 million transactions / month)", "Google (1,000,001&ndash;5 million transactions / month)",
+        "Microsoft (Standard)", "Google (5,000,001&ndash;20 million transactions / month)", "Google (1&ndash;1,000 transactions / month)",
+        "Microsoft (1&ndash;30,000 transactions / month)"],
         datasets: [{
             label: 'Transaction Fee (USD / 1000 transactions)',
             data: [20, 2.5, 1.5, 1.5, 0.6, 0, 0],
