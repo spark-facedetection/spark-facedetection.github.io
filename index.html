@@ -142,10 +142,11 @@ var ctx = document.getElementById("monthly_charge");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Affectiva", "Eyedea", "PUX", ""],
+        labels: ["PUX", "Affectiva", "Eyedea (Plan E)", "Eyedea (Plan F)", "Eyedea (Plan G)", "Eyedea (Plan H)", "Eyedea (Plan I)",
+        "Eyedea (Plan J)"],
         datasets: [{
             label: 'Monthly Charge (USD)',
-            data: [250, 7434.024, 998.79, 2.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            data: [2500, 250, 36.92, 34.14, 32.34, 30.95, 21.19, 18.41],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
