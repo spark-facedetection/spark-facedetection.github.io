@@ -63,12 +63,12 @@ var ctx = document.getElementById("one_time_charge");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Ayonix", "Noldus", "Eyedea (Plan A)", "Eyedea (Plan B)", "Eyedea (Plan C)", "Eyedea (Plan D)", "Eyedea (Plan E)",
-        "Eyedea (Plan F)", "Tastenkunst", "Baidu", "CCV", "CLandmark", "Deep Face Representation", "Dlib", "FaceRect", "libface",
-        "libfacedetection", "M. Hammond", "OpenBR", "OpenCV", "OpenFace", "OpenIMAJ", "Semantic Vision Tech.", "Visual Geometry Group"],
+        labels: ["Ayonix", "Noldus", "Eyedea (Plan A)", "Eyedea (Plan B)", "Eyedea (Plan C)", "Eyedea (Plan D)", "Tastenkunst", "Baidu",
+        "CCV", "CLandmark", "Deep Face Representation", "Dlib", "FaceRect", "libface", "libfacedetection", "M. Hammond", "OpenBR",
+        "OpenCV", "OpenFace", "OpenIMAJ", "Semantic Vision Tech.", "Visual Geometry Group"],
         datasets: [{
             label: 'One-time Charge (USD)',
-            data: [25000, 7434.024, 1032.19, 998.79, 443.32, 410.11, 254.44, 221.10, 2.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            data: [25000, 7434.024, 1919.50, 1886.54, 1032.19, 998.79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -91,9 +91,7 @@ var myChart = new Chart(ctx, {
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(75, 192, 192, 0.2)'
             ],
             borderColor: [
                 'rgba(255,99,132,1)',
@@ -117,9 +115,7 @@ var myChart = new Chart(ctx, {
                 'rgba(255,99,132,1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(75, 192, 192, 1)'
             ],
             borderWidth: 1
         }]
@@ -127,7 +123,7 @@ var myChart = new Chart(ctx, {
     options: {
         title: {
             display: true,
-            text: 'One-time Fee'
+            text: 'One-time Charge'
         },
         scales: {
             yAxes: [{
