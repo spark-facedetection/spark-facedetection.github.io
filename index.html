@@ -142,11 +142,12 @@ var ctx = document.getElementById("monthly_fee");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["PUX", "Lambda Labs (MEGA)", "Lambda Labs (ULTRA)", "Affectiva", "Lambda Labs (PRO)", "Eyedea (Plan E)", "Eyedea (Plan F)", "Eyedea (Plan G)", "Eyedea (Plan H)", "Eyedea (Plan I)",
-        "Eyedea (Plan J)", "Lambda Labs (BASIC)"],
+        labels: ["PUX", "Lambda Labs (Mega)", "Lambda Labs (Ultra)", "Affectiva", "Lambda Labs (Pro)", "SkyBiometry (P2)",
+          "SkyBiometry (P1)", "Eyedea (Plan E)", "Eyedea (Plan F)", "Eyedea (Plan G)", "Eyedea (Plan H)", "Eyedea (Plan I)",
+          "Eyedea (Plan J)", "SkyBiometry (Free)", "Lambda Labs (Basic)"],
         datasets: [{
             label: 'Monthly Charge (USD/month)',
-            data: [2500, 1449, 449, 250, 149, 36.92, 34.14, 32.34, 30.95, 21.19, 18.41, 0],
+            data: [2500, 1449, 449, 250, 149, 110.96, 55.47, 36.92, 34.14, 32.34, 30.95, 21.19, 18.41, 0, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
