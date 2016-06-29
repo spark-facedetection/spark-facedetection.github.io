@@ -57,15 +57,86 @@ This is to date</p>
 <h3>
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h3>
 
-<canvas id="myChart" width="400" height="400">
-</canvas>
+<canvas id="one_time_fee" width="400" height="400"></canvas>
 <script>
-var ctx = document.getElementById("myChart");
+var ctx = document.getElementById("one_time_fee");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Ayonix", "Noldus", "Eyedea", "Tastenkunst", "CCV", "CLandmark", "Deep Face Representation", "Dlib", "libface",
-        "libfacedetection", "M. Hammond", "OpenBR", "OpenCV", "OpenFace", "OpenIMAJ", "Semantic Vision Tech.", "Visual Geometry Group"],
+        labels: ["Ayonix", "Noldus", "Eyedea", "Tastenkunst", "Baidu", "CCV", "CLandmark", "Deep Face Representation", "Dlib",
+          "FaceRect", "libface", "libfacedetection", "M. Hammond", "OpenBR", "OpenCV", "OpenFace", "OpenIMAJ", "Semantic Vision Tech.",
+          "Visual Geometry Group"],
+        datasets: [{
+            label: 'Minimum One-time Fee (USD)',
+            data: [25000, 7434.024, 998.79, 2.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'One-time Fee'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+<canvas id="subscription_fee" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("subscription_fee");
+var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["Affectiva", "Eyedea", "PUX", ""],
         datasets: [{
             label: 'USD',
             data: [25000, 7434.024, 998.79, 2.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -125,8 +196,6 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
-
-
 
 <h3>
 <a id="reference" class="anchor" href="#reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reference</h3>
