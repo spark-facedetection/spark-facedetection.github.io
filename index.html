@@ -72,13 +72,13 @@ var myChart = new Chart(ctx, {
                 data: [25]
             },
             {
-                label: "Maximum ±Degree of Pitch",
+                label: "Pitch",
                 backgroundColor: 'rgba(255, 206, 86, 0.2)',
                 borderColor: 'rgba(255, 206, 86, 1)',
                 data: [25]
             },
             {
-                label: "Maximum ±Degree of Roll",
+                label: "Roll",
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 data: [25]
@@ -88,7 +88,7 @@ var myChart = new Chart(ctx, {
     options: {
         title: {
             display: true,
-            text: 'Robustness against Yaw'
+            text: 'Robustness against Yaw/Pitch/Roll'
         },
         scales: {
             yAxes: [{
