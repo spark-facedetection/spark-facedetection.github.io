@@ -211,10 +211,10 @@ var ctx = document.getElementById("transaction_fee");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Stupefix"],
+        labels: ["Stupefix", "Microsoft (Standard)", "Microsoft (Free)"],
         datasets: [{
-            label: 'Transaction Fee (USD/transaction)',
-            data: [0.02],
+            label: 'Transaction Fee (USD / 1000 transactions)',
+            data: [20, 1.5, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
