@@ -48,7 +48,7 @@ the robustness against small face size, yaw/pitch/roll, facial expression, occlu
 This is to date</p>
 
 <ol>
-<li>the most comprehensive collection of benchmarks for face detection in the lab and in the purchasing process (8 benchmarks), and</li>
+<li>the most comprehensive collection of benchmarks for face detection in the lab and in the purchasing process (11 benchmarks), and</li>
 <li>the most comprehensive list of commercialized face detection (total 62).</li>
 </ol>
 
@@ -67,7 +67,7 @@ var myChart = new Chart(ctx, {
         'Neurotechnology', 'Noldus', 'Sightcorp', 'SkyBiometry', 'Tastenkunst', 'Visage Tech.', 'Windows'],
         datasets: [
             {
-                label: "Maximum ±Degree of Yaw",
+                label: "Yaw",
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1,
@@ -92,7 +92,7 @@ var myChart = new Chart(ctx, {
     options: {
         title: {
             display: true,
-            text: 'Robustness against Yaw/Pitch/Roll Claimed by the Providers'
+            text: 'Maximum ±Degree of Yaw/Pitch/Roll Claimed by the Providers'
         },
         scales: {
             yAxes: [{
