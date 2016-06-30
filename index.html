@@ -347,9 +347,11 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+        legend: {
+            display: false
+        },
         scales: {
             xAxes: [{
-                display: false,
                 scaleLabel: {
                     display: true,
                     labelString: 'Transaction Fee (USD / 1,000 transactions)'
