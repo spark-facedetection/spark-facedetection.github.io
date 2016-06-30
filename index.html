@@ -63,7 +63,7 @@ var ctx = document.getElementById("yaw_our");
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["Sample A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+        labels: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
         datasets: [
             {
                 label: "ColorReco",
@@ -78,6 +78,12 @@ var myLineChart = new Chart(ctx, {
     options: {
         scales: {
             xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'People'
+                }
+            }],
+            yAxes: [{
                 scaleLabel: {
                     display: true,
                     labelString: 'Maximum ±Degree of Yaw'
