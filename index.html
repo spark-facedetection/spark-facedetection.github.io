@@ -60,37 +60,48 @@ This is to date</p>
 <canvas id="yaw_our" width="400" height="400"></canvas><br>
 <script>
 var ctx = document.getElementById("yaw_our");
-var myLineChart = new Chart(ctx, {
+var myChart = new Chart(ctx, {
     type: 'line',
-    data: data
-    //options: options
-});
-var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-        {
-            label: "My First dataset",
-            fill: false,
-            lineTension: 0.1,
-            backgroundColor: "rgba(75,192,192,0.4)",
-            borderColor: "rgba(75,192,192,1)",
-            borderCapStyle: 'butt',
-            borderDash: [],
-            borderDashOffset: 0.0,
-            borderJoinStyle: 'miter',
-            pointBorderColor: "rgba(75,192,192,1)",
-            pointBackgroundColor: "#fff",
-            pointBorderWidth: 1,
-            pointHoverRadius: 5,
-            pointHoverBackgroundColor: "rgba(75,192,192,1)",
-            pointHoverBorderColor: "rgba(220,220,220,1)",
-            pointHoverBorderWidth: 2,
-            pointRadius: 1,
-            pointHitRadius: 10,
-            data: [65, 59, 80, 81, 56, 55, 40],
+    data: {
+        labels: ['ColorReco'],
+        datasets: [
+            {
+                label: "Yaw",
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+                data: [25, 20, 30, 30, 15, 15, 15, 45, 20, 45, 40, 4.4, 45, 45, 90, 15]
+            },
+            {
+                label: "Pitch",
+                backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                borderColor: 'rgba(255, 206, 86, 1)',
+                borderWidth: 1,
+                data: [25, 20, 30, 30, 15, 15, 15, null, 20, 15, null, 3.9, 25, 20, 40, 15]
+            },
+            {
+                label: "Roll",
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                data: [25, null, 30, null, null, 20, 15, null, 20, 180, null, null, 180, null, 40, null]
+            },
+        ]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'Maximum ±Degree of Yaw/Pitch/Roll Claimed by the Providers'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
         }
-    ]
-};
+    }
+});
 </script>
 
 <canvas id="yaw_providers" width="400" height="400"></canvas><br>
