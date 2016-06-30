@@ -349,6 +349,7 @@ var myChart = new Chart(ctx, {
     options: {
         scales: {
             xAxes: [{
+                display: false,
                 scaleLabel: {
                     display: true,
                     labelString: 'Transaction Fee (USD / 1,000 transactions)'
@@ -358,7 +359,6 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
-<input id="transaction_fee_saveas" type="button" value="Save as Image" onclick="myChart.toBase64Image();" />
 
 <h3>
 <a id="reference" class="anchor" href="#reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reference</h3>
