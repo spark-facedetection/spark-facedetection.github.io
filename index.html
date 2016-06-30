@@ -63,28 +63,28 @@ var ctx = document.getElementById("yaw");
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ['Affectiva'],
+        labels: ['Affectiva', 'Ayonix', 'Cognitec', 'FaceFirst'],
         datasets: [
             {
                 label: "Maximum ±Degree of Yaw",
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1,
-                data: [25]
+                data: [25, 30, 15, 15]
             },
             {
                 label: "Pitch",
                 backgroundColor: 'rgba(255, 206, 86, 0.2)',
                 borderColor: 'rgba(255, 206, 86, 1)',
                 borderWidth: 1,
-                data: [25]
+                data: [25, 30, 15, 15]
             },
             {
                 label: "Roll",
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 borderWidth: 1,
-                data: [25]
+                data: [25, null, null, 20]
             },
         ]
     },
